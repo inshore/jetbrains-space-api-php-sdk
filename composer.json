@@ -1,0 +1,41 @@
+{
+	"name" : "inshore/jetbrains-space-api-php-sdk",
+	"description" : "Jetbrains Space API PHP SDK",
+	"keywords" : [
+		"api",
+		"jetbrains",
+		"space",
+		"package"
+	],
+	"homepage" : "https://github.com/inshore/jetbrains-space-api-php-sdk",
+	"license" : "MIT",
+	"authors" : [{
+			"name" : "Daniel Mullin",
+			"email" : "daniel.mullin@inshore.je"
+		}
+	],
+	"require" : {
+		"php" : ">=8",
+		"guzzlehttp/guzzle" : "^7.0",
+		"respect/validation" : "^2.0",
+		"monolog/monolog": "^2.1"
+	},
+	"require-dev" : {
+		"phpunit/phpunit" : "9"
+	},
+	"autoload" : {
+		"psr-4" : {
+			"InShore\\Space\\" : "src"
+		}
+	},
+	"autoload-dev" : {
+		"psr-4" : {
+			"InShore\\Space\\Test\\" : "tests"
+		}
+	},
+	"extra" : {
+		"branch-alias" : {
+			"dev-master" : "1.0-dev"
+		}
+	}
+}
